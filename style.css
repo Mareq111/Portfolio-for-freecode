@@ -2,13 +2,15 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   font-size: 16px;
+   font-family: Poppins, sans-serif;
 
 }
 .project {
    height: 400px;
    width: 350px;
 }
-#project1-img {
+#project-img {
    max-width: 350px;
    max-height: 300px;
 
