@@ -1,17 +1,174 @@
 * {
    margin: 0;
    padding: 0;
-   box-sizing: border-box;
+   
+ }
+:root {
+   --red-color: #be3144;
+   --white-color: #f0f0f0;
+   --black-background: #000000;
+   --navy-background: #45567d;
+   --darker-navy-background: #303841;
+}
+
+
+body, html {
+   position: absolute;
+   line-height: normal;
+   height: 100%;
+   width: 100%;
    font-size: 16px;
    font-family: Poppins, sans-serif;
+   /* background-color: #303841; */
+   
+}
 
+/* Nawigacja */
+#navbar {
+   background-color: var(--red-color);
+   display: flex;
+   align-items: center;
+   width: 100%;
+   height: 80px;
+   position: fixed;
 }
-.project {
-   height: 400px;
-   width: 350px;
+
+#list-items {
+   width: 100vw;
+   height: 10vh;
+   display: flex;
+   align-items: center;
+   justify-content: right;
+   gap: 50px;
+   list-style: none;
+   margin-right: 50px;
+   
 }
+.nav-list {
+   font-size: 1.5rem;
+   color: var(--white-color);
+   text-decoration: none;
+   font-weight: normal;
+   letter-spacing:  1px;
+}
+
+/* 1 sekcja welcome */
+
+#welcome-section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--darker-navy-background);
+   height: 100vh;
+   margin-top: 80px;
+   
+}
+.title {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   gap: 1rem;
+   
+  
+}
+#title-h1 {
+   font-family: Raleway, sans-serif;
+   font-size: 4rem;
+   margin: 0;
+   color: var(--white-color);
+   
+}
+
+#title-p {
+   margin: 0;
+   font-size: 2rem;
+   font-weight: lighter;
+   color: var(--red-color);
+   font-style:italic;
+   
+}
+
+/* 2 sekcja my projects */
+
+.flex-project {
+   background-color: var(--navy-background);
+   display: flex;
+  flex-flow: column  wrap;
+  align-content:center;
+  
+}
+
+#projects-h2 {
+   display: flex;
+   flex-flow:column wrap;
+   justify-content: center;
+   width: 100vw;
+   height: 200px;
+   color: var(--white-color);
+   font-size: 3rem;
+   margin-left: auto;
+   margin-right: auto;
+   
+   
+}
+#projects {
+   background-color: var(--navy-background);
+   display: flex;
+  flex-flow: row  wrap;
+ justify-content: center;
+ text-decoration: none;
+  gap: 2rem;
+  margin: 1rem;
+  
+  
+}
+.project-tile {
+   height: 500px;
+   width: 450px;
+   background-color: #303841;
+ 
+}
+#btn-show-all {
+   margin-top: 50px;
+   height: 50px;
+   width: 100%;
+   border-radius: 5px;
+   background-color: var(--navy-background);
+   color: var(--white-color);
+   font-size: 2rem;
+ 
+}
+
+
+
 #project-img {
-   max-width: 350px;
-   max-height: 300px;
-
+   width: 450px;
+   height: 400px;
+   
 }
+
+.project-p {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   padding-top: 1.5rem;
+   color: var(--white-color);
+   font-size: 1.7rem;
+   
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
