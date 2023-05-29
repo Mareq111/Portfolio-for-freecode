@@ -197,15 +197,33 @@ color: var(--white-color);
   margin-right: 1.5rem;
 }
 .social {
+  position: relative;
    font-size: 1.7rem;
    padding: 2rem;
+   padding-bottom: 1.5rem;
    color: var(--white-color);
+   text-shadow: 1px 1px 2px var(--black-background);
 }
 .social i {
    padding-right: 1rem;
    color: var(--white-color);
 }
 
+.social::before {
+content: " ";
+position: absolute;
+width: 70%;
+height: 5px;
 
-
-/* zrob shadow tej sekcji */
+border-radius: 6px;
+background-color: var(--red-color);
+bottom: 0;
+left: 10;
+transform-origin: right;
+transform: scaleX(0);
+transition: transform  0.3s ease-in-out;
+}
+.social:hover::before {
+  transform-origin: right;
+  transform: scaleX(1);
+}
