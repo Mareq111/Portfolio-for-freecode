@@ -14,7 +14,7 @@
 
 body,
 html {
-  position: abs olute;
+  position: absolute;
   line-height: normal;
   height: 100%;
   width: 100%;
@@ -32,6 +32,7 @@ html {
   width: 100%;
   height: 80px;
   position: fixed;
+  z-index: 1;
 }
 
 #list-items {
@@ -55,6 +56,7 @@ html {
 /* 1 section welcome */
 
 #welcome-section {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,7 +140,7 @@ html {
 /* button show-all */
 
 .btn-show {
-  position: relative;
+   margin-bottom: 2rem;
   background-color: var(--darker-navy-background);
   color: var(--white-color);
   font-size: 1.5rem;
@@ -147,6 +149,9 @@ html {
   max-width: 8rem;
   max-height: 2rem;
   transition: all 0.3s ease-in-out;
+  justify-content: flex-end;
+  align-items: flex-end;
+  
 }
 .btn-show i {
   height: 1.2rem;
@@ -159,3 +164,48 @@ html {
 }
 
 /* section social */
+
+.section-social {
+   width: 100vw;
+   height: 50rem;
+display: flex;
+flex-flow: column wrap;
+justify-content: center;
+align-items: center;
+text-align: center;
+background-color: var(--darker-navy-background);
+color: var(--white-color);
+
+}
+#h3-social {
+  font-size: 4rem;
+  margin-bottom: 1.7rem;
+}
+#p-social {
+   font-size: 1.3rem;
+   font-style: italic;
+   margin-bottom: 1rem;
+}
+
+.all-socials {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   align-items: center;
+  padding: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.social {
+   font-size: 1.7rem;
+   padding: 2rem;
+   color: var(--white-color);
+}
+.social i {
+   padding-right: 1rem;
+   color: var(--white-color);
+}
+
+
+
+/* zrob shadow tej sekcji */
