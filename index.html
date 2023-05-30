@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="PL">
+<html lang="EN">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- theme color ? -->
+    <meta name="theme-color" content="var(--theme)">
+
     <title>Portfolio Last</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/460b41b87d.js" crossorigin="anonymous"></script>
@@ -41,8 +44,8 @@
         <!-- project 1  -->
 
         <div class="project-tile" id="project1">
-            <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" id="profile-link" target="_blank">
-                <img id="project-img" src="photo/tribute (1).jpg" alt="projekt tribute">
+            <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank">
+                <img id="project-img" src="photo/tribute (1).jpg" alt="project tribute">
                 <p class="project-p">Tribute page</p>
         </a> 
         </div>
@@ -50,8 +53,8 @@
         <!-- project 2  -->
 
         <div class="project-tile" id="project2">
-            <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" id="profile-link" target="_blank">
-                <img id="project-img" src="photo/random-quote-machine.png" alt="projekt random quote machine">
+            <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank">
+                <img id="project-img" src="photo/random-quote-machine.png" alt="project random quote machine">
                      
             <div class="project-down" id="project2-down">
                 <p class="project-p">Random Quote Machine</p>
@@ -62,8 +65,8 @@
         <!-- project 3 -->
 
         <div class="project-tile" id="project3">
-            <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" id="profile-link" target="_blank">
-                <img id="project-img" src="photo/calc.png" alt="projekt javascript calculator">
+            <a href="https://codepen.io/freeCodeCamp/full/wgGVVX"  target="_blank">
+                <img id="project-img" src="photo/calc.png" alt="project javascript calculator">
                      
             <div class="project-down" id="project3-down">
                 <p class="project-p">JavaScript Calculator</p>
@@ -74,8 +77,8 @@
          <!-- project 4 -->
 
          <div class="project-tile" id="project4">
-            <a href="https://codepen.io/freeCodeCamp/full/mVEJag" id="profile-link" target="_blank">
-                <img id="project-img" src="photo/map.jpg" alt="projekt map data across the globe">
+            <a href="https://codepen.io/freeCodeCamp/full/mVEJag" " target="_blank">
+                <img id="project-img" src="photo/map.jpg" alt="project map data across the globe">
                      
             <div class="project-down" id="project4-down">
                 <p class="project-p">Map Data Across the Globe</p>
@@ -86,19 +89,19 @@
          <!-- project 5 -->
 
          <div class="project-tile" id="project5">
-            <a href="https://codepen.io/freeCodeCamp/full/wGqEga" id="profile-link" target="_blank">
-                <img id="project-img" src="photo/wiki.png" alt="projekt wikipedia viewer">
+            <a href="https://codepen.io/freeCodeCamp/full/wGqEga"  target="_blank">
+                <img id="project-img" src="photo/wiki.png" alt="project wikipedia viewer">
                      
             <div class="project-down" id="project5-down">
                 <p class="project-p">Wikipedia Viewer</p>
             </div>
         </a> 
         </div>
-        
+
          <!-- project 6 -->
 
          <div class="project-tile" id="project6">
-            <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" id="profile-link" target="_blank">
+            <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank">
                 <img id="project-img" src="photo/tic-tac-toe.png" alt="project tic tac toe game">
                      
             <div class="project-down" id="project6-down">
@@ -108,11 +111,13 @@
         </div>
 
         <!-- przycisk show all -->
-
-            <a href="https://codepen.io/FreeCodeCamp/"  class="btn-show" id="profile-link" target="_blank">
+<div class="show-all-btn" id="show-all-btn">
+            <a href="https://codepen.io/FreeCodeCamp/"  class="btn-show" target="_blank">
                 Show All
                 <i class="fa-solid fa-chevron-right "></i>
             </a>
+        </div>
+    
     </div>
     </section>
 
@@ -123,16 +128,18 @@
         <p id="p-social">How do you take your coffee?</p>
         <div class="all-socials">
         <a href="https://www.facebook.com/freecodecamp" target="_blank" class="social"><i class="fa-brands fa-square-facebook"></i>Facebook</a>
-        <a href="https://github.com/Mareq111" class="social" target="_blank"><i class="fa-brands fa-square-github"></i>GitHub</a>
+        <a href="https://github.com/Mareq111" class="social" id="profile-link" target="_blank"><i class="fa-brands fa-square-github"></i>GitHub</a>
         <a href="https://twitter.com/freecodecamp" class="social" target="_blank"><i class="fa-brands fa-twitter"></i>Twitter</a>
         <a href="https://www.google.com/intl/pl/gmail/about/" class="social" target="_blank"><i class="fa-solid fa-at"></i>send a mail</a>
         <a href="https://youtu.be/qetW6R9Jxs4" class="social" target="_blank"><i class="fa-solid fa-phone"></i>Call me</a>
     </div>
     </section>
-    <hr>
+    <hr id="red-line">
     <footer>
-        <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
-        <p>© Created for <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></p>
+        <p class="footer-p" id="footer-p1">**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+        <p class="footer-p"  id="footer-p2" >© Created for <a id="footer-link" href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></p>
     </footer>
 </body>
 </html>
+
+<!-- last check 30.5.2023 -->

@@ -5,11 +5,13 @@
   list-style: none;
 }
 :root {
+  --p-red-color: #f34c62;
   --red-color: #be3144;
   --white-color: #f0f0f0;
   --black-background: #000000;
   --navy-background: #45567d;
   --darker-navy-background: #303841;
+  --theme: rgb(155, 61, 80);
 }
 
 body,
@@ -20,6 +22,7 @@ html {
   width: 100%;
   font-size: 16px;
   font-family: Poppins, sans-serif;
+  overflow-x: hidden;
 }
 
 /* Navigation */
@@ -35,7 +38,7 @@ html {
 }
 
 #list-items {
-  width: 100vw;
+  width: 100%;
   height: 10vh;
   display: flex;
   align-items: center;
@@ -61,7 +64,7 @@ html {
   align-items: center;
   justify-content: center;
   background-color: var(--darker-navy-background);
-  height: 100vh;
+  height: 100%;
   margin-top: 80px;
 }
 .title {
@@ -83,7 +86,7 @@ html {
   margin: 0;
   font-size: 2rem;
   font-weight: lighter;
-  color: var(--red-color);
+  color: var(--p-red-color);
   font-style: italic;
 }
 
@@ -137,9 +140,14 @@ html {
 }
 
 /* button show-all */
+.show-all-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 .btn-show {
-   margin-bottom: 2rem;
+  margin-bottom: 2rem;
   background-color: var(--darker-navy-background);
   color: var(--white-color);
   font-size: 1.5rem;
@@ -148,9 +156,6 @@ html {
   max-width: 8rem;
   max-height: 2rem;
   transition: all 0.3s ease-in-out;
-  justify-content: flex-end;
-  align-items: flex-end;
-  
 }
 .btn-show i {
   height: 1.2rem;
@@ -165,31 +170,31 @@ html {
 /* section social */
 
 .section-social {
-   width: 100vw;
-   height: 50rem;
-display: flex;
-flex-flow: column wrap;
-justify-content: center;
-align-items: center;
-text-align: center;
-background-color: var(--darker-navy-background);
-color: var(--white-color);
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--darker-navy-background);
+  color: var(--white-color);
 }
 #h3-social {
   font-size: 4rem;
   margin-bottom: 1.7rem;
 }
 #p-social {
-   font-size: 1.3rem;
-   font-style: italic;
-   margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-bottom: 1rem;
 }
 
 .all-socials {
-   display: flex;
-   flex-flow: row wrap;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
   padding: 2rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -199,32 +204,89 @@ color: var(--white-color);
 
 .social {
   position: relative;
-   font-size: 1.7rem;
-   padding: 2rem;
-   padding-bottom: 1.5rem;
-   color: var(--white-color);
-   text-shadow: 1px 1px 2px var(--black-background);
+  font-size: 1.7rem;
+  padding: 2rem;
+  padding-bottom: 1.5rem;
+  color: var(--white-color);
+  text-shadow: 1px 1px 2px var(--black-background);
 }
 .social i {
-   padding-right: 1rem;
-   color: var(--white-color);
+  padding-right: 1rem;
+  color: var(--white-color);
 }
 
 .social::before {
-content: " ";
-position: absolute;
-width: 70%;
-height: 5px;
+  content: " ";
+  position: absolute;
+  width: 70%;
+  height: 5px;
 
-border-radius: 6px;
-background-color: var(--red-color);
-bottom: 0;
-left: 10;
-transform-origin: right;
-transform: scaleX(0);
-transition: transform  0.3s ease-in-out;
+  border-radius: 6px;
+  background-color: var(--red-color);
+  bottom: 0;
+  left: 10;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
 }
 .social:hover::before {
   transform-origin: right;
   transform: scaleX(1);
+}
+/* line -red color before footer */
+
+#red-line {
+  background-color: var(--red-color);
+  height: 0.4rem;
+  width: 100%;
+  border: none;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+
+  width: 100%;
+  height: 8rem;
+  background-color: var(--darker-navy-background);
+  color: var(--white-color);
+}
+
+.footer-p {
+  font-size: 1.4rem;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+#footer-link {
+  color: var(--red-color);
+  transition: 0.3s ease-in-out;
+}
+#footer-link:hover {
+  color: var(--white-color);
+}
+
+/* media queries max-width 768px */
+
+@media screen and (max-width: 768px) {
+  #title-h1 {
+    font-size: 3rem;
+  }
+  #title-p {
+    font-size: 1.5rem;
+  }
+  #projects-h2 {
+    font-size: 2.5rem;
+  }
+  #h3-social {
+    font-size: 3rem;
+  }
+  #p-social {
+    font-size: 1.2rem;
+  }
+  .footer-p {
+    font-size: 1rem;
+  }
 }
